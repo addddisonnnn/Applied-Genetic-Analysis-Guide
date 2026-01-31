@@ -58,7 +58,8 @@ plink --bfile data --geno 0.05 --make-bed --out filtered  # removes SNPs with >5
 - Threshold: p < 1e-4 (in controls)
 - PLINK command:
 ```bash
-plink --bfile data --hardy --out hwe1```
+plink --bfile data --hardy --out hwe1
+```
 - Filter:
 ```bash
 plink --bfile data --hwe 1e-4 --make-bed --out filtered
@@ -98,8 +99,8 @@ plink --bfile data --check-sex --out sexcheck
     - F < 0.2 → Female
     0.2 ≤ F ≤ 0.8 → Ambiguous
 - Action: Exclude mismatches (reported vs. genotype sex)
-**D. Relatedness (IBD/IBS)
-**
+
+**D. Relatedness (IBD/IBS)**
 - IBS: Identical by State (alleles look identical)
 - IBD: Identical by Descent (from common ancestor)
 - π (pi-hat): Proportion of alleles shared IBD = P(IBD=2) + 0.5×P(IBD=1)
@@ -233,7 +234,7 @@ C. Expected Output Files
 - `.genome`: IBD estimates
 - `.sexcheck`: Sex concordance
 
-### VII. KEY POINTS FOR EXAMS
+### VII. KEY POINTS
 **A. Must-Know Concepts** 
 1. HWE assumptions: Random mating, no selection/mutation/migration, large population
 2. IBD vs IBS: IBD always ≤ IBS
