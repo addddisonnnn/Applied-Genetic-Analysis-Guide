@@ -253,6 +253,15 @@ plink --bfile INPUT --FILTER_THRESHOLD --make-bed --out OUTPUT
 # Combined filter:
 plink --bfile INPUT --maf X --geno Y --mind Z --hwe W --make-bed --out OUTPUT
 ```
+**C. Commands for reporting and filtering data**
+ What? | Report/summary File |Filtering|
+| -------- | ------- | -------- | 
+|Allele Freq |--freq | --maf
+|By-variant missing proportion |--missing |--geno 
+|By-individual missing variant population |--missing |--mind 
+|Hardy-Weinberg exact test |--hardy |--hwe
+
+
 **C. Data Sizes & Computation**
 - n individuals → `.imiss` has n+1 lines
 - m SNPs → `.frq `has m+1 lines
