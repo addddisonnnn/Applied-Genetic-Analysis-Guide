@@ -12,7 +12,7 @@ module load plink/1.90b6.27
 module load eigensoft 
 ```
 
-Use The TGEN+HapMap PCA results we created during the class example analyses (the files TGEN_hapmap_pruned.evec, TGEN_hapmap_pruned.eval, hapmaptgen.out) to complete the first 2 questions.
+Use The TGEN+HapMap PCA esults we created during the class example analyses (the files TGEN_hapmap_pruned.evec, TGEN_hapmap_pruned.eval, hapmaptgen.out) to complete the first 2 questions.
 
 1. **In our class example PCA using TGEN merged with hapmap samples, what are the IDs of the two TGEN samples that cluster with the YRI and JPT+CHB on the first two PCs? Which individual appears to be clustering with the CHB+JPT samples, and which close to the Yoruban?** 
     - Answer: The ID of the TGEN sample that clusters wiht the YRI is WGACON_66 because this individual has a negative PC1 (of -0.0839) and a negative PC2 (of -0.0658). The ID of the TGEN sample that clusters with the JPT_CHB is WGAAD_270 because this individual has a negative PC1 (of -0.0543) and a positive PC2 (0.0807).
