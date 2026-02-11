@@ -275,11 +275,20 @@ MAYO_10529	MAYO_10529
 ```
 
 d. What is the maximum relationship coefficient for MAYO_10139, other than with itself?
-- Answer: The maximum relationship coefficient for MAYO_10139 is 8.12104e-05.
+- Answer: The maximum relationship coefficient for MAYO_10139 is 0.0197864.
 ```bash
-# Since MAYO_10139 is on the first row, we look at the first row, make sure to account for tab delimited, and show the largest value 
-> awk 'NR==1' Q3_GRM.rel | tr '\t' '\n' | sort -rn | head -1
-8.12104e-05
+# gets the first column values, sorts them and shows the largest value, so the maximum relationship coefficient is the second largest value because the largest value is itself.
+cut -f1 Q3_GRM.rel | sort -g | tail
+0.0161387
+0.0166377
+0.0175669
+0.0178712
+0.0182096
+0.0192125
+0.0193096
+0.0196175
+0.0197864
+0.99507
 ```
 
 4. Perform a GWAS using a logistic mixed model score test, with no covariates. Do a second GWAS using this model and the same PCs you included in the Q2 analysis. You can edit the GMMAT.R program we used in class to do this.
@@ -375,7 +384,7 @@ glmm.score(model1.0, infile=geno.file, outfile="TGEN.glmm.score.nocov")
 glmm.score(model2.0, infile=geno.file, outfile="TGEN.glmm.score.PC6PC8cov")
 ```
 a. How many SNPs have p-value < 0.0001 in each of these two GWAS?
-- Answer: The GWAS with no covariate has 28 SNPs with a p-value <0.0001. 
+- Answer: The GWAS with no covariate has 28 SNPs with a p-value <0.0001.  And the GWAS with PC6 and PC8 has 22 SNPs with a p-value of <0.0001. 
 ```bash
 > awk 'NR>1 && $11 < 0.0001 { count++ } END { print count+0 }' TGEN.glmm.score.nocov
 28
