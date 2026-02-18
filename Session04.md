@@ -1,4 +1,4 @@
-## Session 2: Genotype imputation and analysis of imputed genotypes
+## Session 4: Genotype imputation and analysis of imputed genotypes
 ### BS859 Applied Genetic Analysis
 ### Feburary 11, 2026
 
