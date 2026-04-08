@@ -4,7 +4,7 @@
 
 Question 1 - Which of the following statements correctly describe the relationship among polygenic risk scores (PRS), LD score regression heritability estimates, and linkage disequilibrium (LD)? (Select all that apply.)
 - **LD score regression estimates SNP heritability from GWAS summary statistics using LD information; this heritability represents an upper limit on how much variance a PRS can explain in an independent sample**
-- When the discovery GWAS sample size is small, LD score regression will generally overestimate heritability relative to the predictive performance achievable by PRS
+- **When the discovery GWAS sample size is small, LD score regression will generally overestimate heritability relative to the predictive performance achievable by PRS**
 - **Differences in LD patterns and allele frequencies across populations can reduce the performance of PRS when applied across ancestries, even if the same causal variants are involved**
 - **PRS methods that explicitly model LD (e.g., using an LD matrix from a well-matched reference) can improve prediction accuracy compared to simple clumping and thresholding**
 - LD score regression requires individual-level genotype data from the discovery GWAS and therefore cannot be applied using summary statistics alone
